@@ -1,0 +1,22 @@
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+	<script type="text/javascript">
+	  var lang = navigator.language;
+	  if (lang == undefined) {
+		  lang = navigator.browserLanguage;
+	  }
+	  if (lang == undefined) {
+		  window.location.href = 'en/index.html';
+	  } else {
+		  if (lang.indexOf('zh') >= 0) {
+			  window.location.href = 'zh/index.html';
+		  } else {
+			  window.location.href = 'en/index.html';
+		  }
+	  }
+	</script>
+	<noscript>
+	  <meta http-equiv="refresh" content="0;url=en/index.html"> </meta>
+	</noscript>
+  </head>
+</html>
